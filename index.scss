@@ -1,7 +1,18 @@
 $fontSize: 30px;
+$fontFam: 'Playfair Display',
+serif 30px;
+$fontFam2: 'Playfair Display',
+serif 16px;
+$fontFam3: 'Montserrat';
+$fontGenres: 'Montserrat';
+sans-serif;
 %boxSize {
     margin: auto;
     max-width: 80%;
+}
+
+%sectionTop {
+    margin-top: 50px;
 }
 
 %flexRow {
@@ -25,17 +36,38 @@ $fontSize: 30px;
     &_left {
         margin-right: auto;
         width: $fontSize;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &_icon {
         width: $fontSize;
         margin: 20px;
+        &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+            cursor: pointer;
+        }
     }
+}
+
+h2 {
+    font-family: $fontFam;
+}
+
+h3 {
+    font-family: $fontFam2;
+}
+
+h4 {
+    font-family: $fontFam3;
 }
 
 .container_nav {
     @extend %flexRow;
     justify-content: space-between;
     @extend %boxSize;
+    @extend %sectionTop;
 }
 
 .nav_icon {
@@ -69,6 +101,8 @@ $fontSize: 30px;
 
 .container_genres {
     @extend %boxSize;
+    @extend %flexColumn;
+    @extend %sectionTop;
 }
 
 .genres {
@@ -76,10 +110,16 @@ $fontSize: 30px;
         @extend %flexRow;
         justify-content: space-around;
     }
-    padding: 10px 50px;
     margin: 10px;
     border-radius: 20px;
+    padding: 1vh 2vw;
+    color: #fff;
+    font-family: $fontGenres;
+    @extend %flexRow;
     align-self: center;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .one {
@@ -115,4 +155,45 @@ $fontSize: 30px;
 .seven {
     background: rgb(83, 136, 157);
     background: linear-gradient(90deg, rgba(83, 136, 157, 1) 0%, rgba(187, 209, 217, 1) 100%);
+}
+
+.container_purch_books {
+    @extend%boxSize;
+    @extend %sectionTop;
+}
+
+.books_items {
+    @extend %flexRow;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.view_books {
+    color: red;
+    margin-top: 10px;
+}
+
+.container_wishlist {
+    @extend%boxSize;
+    @extend %sectionTop;
+}
+
+.wishlist_row {
+    @extend%flexRow;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    margin: 10px;
+    &:hover {
+        transform: scale(1.2);
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
+.icon_sign {
+    color: #000;
+    text-decoration: none;
 }
