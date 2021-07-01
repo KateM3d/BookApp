@@ -1,0 +1,68 @@
+$fontSize: 30px;
+%boxSize {
+    margin: auto;
+    max-width: 80%;
+}
+
+%flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_header {
+    @extend %flexRow;
+    justify-content: flex-end;
+    font-size: $fontSize;
+    @extend %boxSize;
+}
+
+.header {
+    &_left {
+        margin-right: auto;
+        width: $fontSize;
+    }
+    &_icon {
+        width: $fontSize;
+        margin: 20px;
+    }
+}
+
+.container_nav {
+    @extend %flexRow;
+    justify-content: space-between;
+    @extend %boxSize;
+}
+
+.nav_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_img {
+    border-radius: 50%;
+}
+
+.container_profile {
+    @extend %flexColumn;
+}
+
+.profile {
+    margin: $fontSize;
+    @extend %flexColumn;
+    align-items: center;
+    &_info {
+        @extend %flexColumn;
+        align-self: center;
+    }
+    &_follow {
+        @extend %flexRow;
+        justify-content: center;
+    }
+}
