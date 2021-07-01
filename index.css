@@ -1,9 +1,9 @@
-.container_header, .container_nav {
+.container_header, .container_nav, .container_genres {
   margin: auto;
   max-width: 80%;
 }
 
-.container_header, .container_nav, .profile_follow {
+.container_header, .container_nav, .profile_follow, .genres_selected {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,5 +83,61 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.genres {
+  padding: 10px 50px;
+  margin: 10px;
+  border-radius: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.genres_selected {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.one {
+  background: #53889d;
+  background: -webkit-gradient(linear, left top, right top, from(#53889d), to(#bbd1d9));
+  background: linear-gradient(90deg, #53889d 0%, #bbd1d9 100%);
+}
+
+.two {
+  background: #f3a492;
+  background: -webkit-gradient(linear, left top, right top, from(#f3a492), to(#d96f6e));
+  background: linear-gradient(90deg, #f3a492 0%, #d96f6e 100%);
+}
+
+.three {
+  background: #f2d05c;
+  background: -webkit-gradient(linear, left top, right top, from(#f2d05c), to(#f3a492));
+  background: linear-gradient(90deg, #f2d05c 0%, #f3a492 100%);
+}
+
+.four {
+  background: #f2d05c;
+  background: -webkit-gradient(linear, left top, right top, from(#f2d05c), to(#f3a492));
+  background: linear-gradient(90deg, #f2d05c 0%, #f3a492 100%);
+}
+
+.five {
+  background: #bbd1d9;
+  background: -webkit-gradient(linear, left top, right top, from(#bbd1d9), to(#f2d05c));
+  background: linear-gradient(90deg, #bbd1d9 0%, #f2d05c 100%);
+}
+
+.six {
+  background: #d96f6e;
+  background: -webkit-gradient(linear, left top, right top, from(#d96f6e), to(#f2d05c));
+  background: linear-gradient(90deg, #d96f6e 0%, #f2d05c 100%);
+}
+
+.seven {
+  background: #53889d;
+  background: -webkit-gradient(linear, left top, right top, from(#53889d), to(#bbd1d9));
+  background: linear-gradient(90deg, #53889d 0%, #bbd1d9 100%);
 }
 /*# sourceMappingURL=index.css.map */
