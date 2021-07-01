@@ -1,9 +1,13 @@
-.container_header, .container_nav, .container_genres {
+.container_header, .container_nav, .container_genres, .container_purch_books, .container_wishlist {
   margin: auto;
   max-width: 80%;
 }
 
-.container_header, .container_nav, .profile_follow, .genres_selected {
+.container_nav, .container_genres, .container_purch_books, .container_wishlist {
+  margin-top: 50px;
+}
+
+.container_header, .container_nav, .profile_follow, .genres_selected, .genres, .books_items, .wishlist_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +17,7 @@
           flex-direction: row;
 }
 
-.container_profile, .profile, .profile_info {
+.container_profile, .profile, .profile_info, .container_genres {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,9 +39,33 @@
   width: 30px;
 }
 
+.header_left:hover {
+  cursor: pointer;
+}
+
 .header_icon {
   width: 30px;
   margin: 20px;
+}
+
+.header_icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Playfair Display", serif 30px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif 16px;
+}
+
+h4 {
+  font-family: "Montserrat" 200px;
 }
 
 .container_nav {
@@ -86,9 +114,11 @@
 }
 
 .genres {
-  padding: 10px 50px;
   margin: 10px;
   border-radius: 20px;
+  padding: 1vh 2vw;
+  color: #fff;
+  font-family: "Montserrat", 12px, sans-serif;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -97,6 +127,10 @@
 .genres_selected {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.genres:hover {
+  cursor: pointer;
 }
 
 .one {
@@ -139,5 +173,43 @@
   background: #53889d;
   background: -webkit-gradient(linear, left top, right top, from(#53889d), to(#bbd1d9));
   background: linear-gradient(90deg, #53889d 0%, #bbd1d9 100%);
+}
+
+.books_items {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view_books {
+  color: red;
+  margin-top: 10px;
+}
+
+.wishlist_row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item {
+  margin: 10px;
+}
+
+.item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.icon_sign {
+  color: #000;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
